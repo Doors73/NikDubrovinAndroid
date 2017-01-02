@@ -1,0 +1,261 @@
+--------- beginning of main
+I/6620_launcher(  171): Can't open device node(/dev/stpwmt) error:-1 
+D/ccci_rpcd(  175): ccci_rpcd Ver:v2.00, CCCI Ver:2
+E/ccci_rpcd(  175): [Warning]Parameter number not correct,use old version!
+E/ccci_fsd(0)(  173): md_fsd Ver:v2.02, CCCI Ver:2
+E/ccci_rpcd(  175): can't catch SIGKILL
+E/ccci_mdinit(0)(  174): md_init ver:1.20
+D/wifi2agps(  198): add no timeout event, sock=4
+E/Netdiag (  194): network_dignose_daemon doing
+E/Netdiag (  194): commandlistening sockname=netdiag
+E/Netdiag (  194): commandlistening::startlistening() ret:0,sock_listen_id:10
+E/AEE/LIBAEE(  184): Can't remove file /sdcard/mtklog/aee_exp/temp: No such file or directory
+E/Netdiag (  194): commandlistening threadStart doing
+E/Netdiag (  194): commandlistening runListener doing
+E/AEE/LIBAEE(  184): Can't remove file /data/aee_exp/temp: No such file or directory
+E/BGWD    (  208): [BGW]init_socket: get control socket error, reason:Protocol not supported
+E/permission_check(  219): do permission check!
+E/MNLD    (  203): main: MNLD started
+E/Netdiag (  194): commandlistening unlock exit
+E/HWMLIB  (  195): gyroscope_open: Couldn't find or open file sensor (Not a typewriter)
+E/NVRAM   (  205): Haman, serviceManager work well
+E/        (  216): LGPService is Created. 2
+E/        (  216): [start] LGE_FacReadOneCmd
+E/        (  216): [start] End ONE Command Read, 0x1
+E/sdcard  (  225): cannot mount fuse filesystem: No such file or directory
+E/        (  216): [LGP_INIT] Primary header_magic_code : M - M / tail_magic_code P - P
+E/        (  216): [LGP_INIT] Primary header_magic_code : I - I / tail_magic_code R - R
+E/        (  216): [LGP_INIT] Primary header_magic_code : S - S / tail_magic_code I - I
+E/        (  216): [LGP_INIT] Primary header_magic_code : 2 - 2 / tail_magic_code M - M
+E/        (  216): [LGP_INIT] Secondary header_magic_code : M - M / tail_magic_code S - S
+E/        (  216): [LGP_INIT] Secondary header_magic_code : I - I / tail_magic_code E - E
+E/        (  216): [LGP_INIT] Secondary header_magic_code : S - S / tail_magic_code C - C
+E/        (  216): [LGP_INIT] Secondary header_magic_code : 2 - 2 / tail_magic_code O - O
+E/        (  216): [LGP_INIT] Magic code of Primary & Secondary MISC2 Table are OK!!
+E/        (  216): [LGP_STABILITY] 06_Primary COMPLETE FLAG : 0x1
+E/        (  216): [LGP_STABILITY] 08_Secondary COMPLETE FLAG : 0x1
+E/        (  216): [LGP_STABILITY] Primary & Secondary Tables are fine!!!
+E/        (  216): [LGP_INIT] Data Version is same.
+E/        (  216): [LGP_INIT] Proximity Cal read value : 35
+E/        (  216): [PROX_CAL] enter ioctl
+E/        (  216): [PROX_CAL] ioctl ret val : 0x0
+E/        (  216): [LGP_INIT] ACCEL Cal read value : 0 0 0
+E/        (  216): [ACCEL_CAL] enter ioctl
+E/        (  216): [ACCEL_CAL] ioctl ret val : 0x0
+E/        (  216): [LGP_INIT] COMPLETE
+E/        (  216): LGPService is Destroyed. 2
+E/6620_launcher(  171): open device node succeed.(Node:/dev/stpwmt, fd:7) 
+E/        (  216): LGPService is Created. 1
+E/SELinux (  167): avc:  denied  { add } for service=android.apps.ILGPService scontext=u:r:init:s0 tcontext=u:object_r:lgpserver_service:s0 tclass=service_manager
+--------- beginning of events
+I/auditd  (  167): avc:  denied  { add } for service=android.apps.ILGPService scontext=u:r:init:s0 tcontext=u:object_r:lgpserver_service:s0 tclass=service_manager
+E/ServiceManager(  167): add_service('android.apps.ILGPService',3) uid=1000 - PERMISSION DENIED
+E/        (  216): LGPService is Destroyed. 1
+E/        (  216): LGPService failed : -1
+E/agps    (  197): [agps] ERR: [MAIN] mtk_agpsd is running ver=4.33.0
+E/agps    (  197): [agps] ERR: [MAIN] mtk_agpsd is for Android
+E/mnl_linux(  203): mnl_utl_load_property: Config is not set yet, ignore
+E/MtkAgpsNative(  197): [CDMA mgr] VIAMTKDBG Could not open /system/lib/libviagpsrpc.so, error: dlopen failed: library "/system/lib/libviagpsrpc.so" not found
+--------- beginning of system
+E/Vold    (  168): failed to open /fstab.my50ds
+E/Vold    (  168): Error reading configuration (No such file or directory)... continuing anyways
+E/HWMLIB  (  195): alsps_set_cali: set_cali err: -1
+E/MobileLogD/bootmode(  193): wait bt
+E/agps    (  197): [agps] ERR: [Utility] safe_write reason=[No such device]19
+E/agps    (  197): [agps] ERR: [CP] get_ccci_uart  open failed node=[/dev/ccci2_tty2] reason=[No such file or directory]
+E/agps    (  197): [agps] ERR: [CP] ccci_uart_2  open failed
+E/MNLD    (  203): read_NVRAM: not 3332 UART port
+E/MNLD    (  203): main: process data error: 2 (No such file or directory)
+E/ccci_fsd(1)(  173): can't catch SIGKILL
+F/libc    (  168): Fatal signal 11 (SIGSEGV), code 1, fault addr 0x0 in tid 168 (vold)
+E/[DRVB][EXT][UTIL](  174): disp_only_chk: DRVB CHECK PROCESS DONE ! STATUS (1/0x2002)
+E/[DRVB][EXT][UTIL](  169): disp_only_chk: DRVB CHECK PROCESS DONE ! STATUS (1/0x2002)
+E/M4U_L   (  169): ::MTKM4UDrv 20.
+I/DEBUG   (  318): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (  318): Build fingerprint: 'LG/LEON_H324/H324:5.0/LRX21M/1450858855:user/release-keys'
+I/DEBUG   (  318): Revision: '0'
+I/DEBUG   (  318): ABI: 'arm'
+I/DEBUG   (  318): pid: 168, tid: 168, name: vold  >>> /system/bin/vold <<<
+I/DEBUG   (  318): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
+E/hwcomposer(  169): [HWC] Failed to get display attributes (dpy=1 is not connected)
+I/DEBUG   (  318):     r0 ffffffff  r1 2737d976  r2 00000004  r3 00000000
+I/DEBUG   (  318):     r4 00000000  r5 00000000  r6 00000000  r7 b743cbb0
+I/DEBUG   (  318):     r8 b6fe0c27  r9 00000000  sl 0001dd82  fp b6fe1c38
+I/DEBUG   (  318):     ip ffffff00  sp be8627b8  lr b6fcf519  pc b6fcf518  cpsr 60010030
+I/DEBUG   (  318): 
+I/DEBUG   (  318): backtrace:
+I/DEBUG   (  318):     #00 pc 00008518  /system/bin/vold
+I/DEBUG   (  318):     #01 pc 00004365  /system/bin/vold (main+764)
+I/DEBUG   (  318):     #02 pc 00011f61  /system/lib/libc.so (__libc_init+44)
+I/DEBUG   (  318):     #03 pc 0000451c  /system/bin/vold
+E/        (  169): ion_custom_ioctl c0084906 failed with code -1: Bad address
+E/[MALI][Gralloc-ERROR](  169): GRALLOC_EXTRA_RESULT gralloc_mtk_private_set_ion_debug(private_handle_t*, gralloc_extra_ion_debug_t*):198 ion_custom_ioctl fail, hnd = 0xb780b8e0
+E/        (  169): ion_custom_ioctl c0084906 failed with code -1: Bad address
+E/[MALI][Gralloc-ERROR](  169): GRALLOC_EXTRA_RESULT gralloc_mtk_private_set_ion_debug(private_handle_t*, gralloc_extra_ion_debug_t*):198 ion_custom_ioctl fail, hnd = 0xb780c6f0
+E/ccci_fsd(1)(  173): IsReadOnly: [error]fail on file: /data/nvram/md/FAT3149C88D.log 
+E/ccci_fsd(1)(  173): Open: [error]fail open Z:/NVRAM/NVD_DATA/MP0B_001: 2 
+E/Netd    (  183): exec() res=0, status=256 for /system/bin/iptables -t filter -N firewall 
+E/Netd    (  183): exec() res=0, status=256 for /system/bin/ip6tables -t filter -N firewall 
+--------- beginning of radio
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 3647:main(): Enter
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 3816:main(): /system/bin/gsm0710muxd $Rev: 1 $ starting
+E/[PropSet](  390): key=debug.mdlogger.log2sd.defaultpath size:33 >= max:32
+E/MDLOGGER(  390): mSockListenId ok
+E/[DRVB][EXT][UTIL](  351): disp_only_chk: DRVB CHECK PROCESS DONE ! STATUS (2/0x2002)
+E/BootAnimation(  351): couldn't find audio_conf.txt
+E/MobileLogD/bootmode(  193): no start logging
+I/auditd  (  167): avc:  received policyload notice (seqno=2)
+I/boot_progress_start(  218): 5664
+E/MDLOGGER(  390): select timeout
+I/auditd  (  167): avc:  received policyload notice (seqno=3)
+E/sdcard  (  633): cannot mount fuse filesystem: No such file or directory
+E/        (  632): LGPService is Created. 2
+E/        (  632): [start] LGE_FacReadOneCmd
+E/        (  632): [start] End ONE Command Read, 0x1
+E/        (  632): [LGP_INIT] Primary header_magic_code : M - M / tail_magic_code P - P
+E/        (  632): [LGP_INIT] Primary header_magic_code : I - I / tail_magic_code R - R
+E/        (  632): [LGP_INIT] Primary header_magic_code : S - S / tail_magic_code I - I
+E/        (  632): [LGP_INIT] Primary header_magic_code : 2 - 2 / tail_magic_code M - M
+E/        (  632): [LGP_INIT] Secondary header_magic_code : M - M / tail_magic_code S - S
+E/        (  632): [LGP_INIT] Secondary header_magic_code : I - I / tail_magic_code E - E
+E/        (  632): [LGP_INIT] Secondary header_magic_code : S - S / tail_magic_code C - C
+E/        (  632): [LGP_INIT] Secondary header_magic_code : 2 - 2 / tail_magic_code O - O
+E/        (  632): [LGP_INIT] Magic code of Primary & Secondary MISC2 Table are OK!!
+E/        (  632): [LGP_STABILITY] 06_Primary COMPLETE FLAG : 0x1
+E/        (  632): [LGP_STABILITY] 08_Secondary COMPLETE FLAG : 0x1
+E/        (  632): [LGP_STABILITY] Primary & Secondary Tables are fine!!!
+E/        (  632): [LGP_INIT] Data Version is same.
+E/        (  632): [LGP_INIT] Proximity Cal read value : 35
+E/        (  632): [PROX_CAL] enter ioctl
+E/        (  632): [PROX_CAL] ioctl ret val : 0x0
+E/        (  632): [LGP_INIT] ACCEL Cal read value : 0 0 0
+E/        (  632): [ACCEL_CAL] enter ioctl
+E/        (  632): [ACCEL_CAL] ioctl ret val : 0x0
+E/        (  632): [LGP_INIT] COMPLETE
+E/        (  632): LGPService is Destroyed. 2
+E/        (  632): LGPService is Created. 1
+E/SELinux (  167): avc:  denied  { add } for service=android.apps.ILGPService scontext=u:r:init:s0 tcontext=u:object_r:lgpserver_service:s0 tclass=service_manager
+I/auditd  (  167): avc:  denied  { add } for service=android.apps.ILGPService scontext=u:r:init:s0 tcontext=u:object_r:lgpserver_service:s0 tclass=service_manager
+E/        (  632): LGPService success to register
+E/onLGPService(  632): ********** Starting LGPService ****************
+E/        (  175): ---BpLGPService
+E/        (  632): TRANSACTION_LGP_IMEI_READ
+E/        (  632): TRANSACTION_LGP_IMEI_READ0 0x6090503
+E/        (  632): TRANSACTION_LGP_IMEI_READ1 0x6000600
+E/        (  632): TRANSACTION_LGP_IMEI_READ2 0x80101
+E/        (  632): TRANSACTION_LGP_IMEI_READ3 0x70509
+E/        (  175): ---> BpLGPService::lgp_imei_read : 0x609050360006008010170509
+E/        (  175): ---> Proxy write : 1
+E/        (  175): ---BpLGPService
+E/        (  632): TRANSACTION_LGP_IMEI_READ
+E/        (  632): TRANSACTION_LGP_IMEI_READ0 0x6090503
+E/        (  632): TRANSACTION_LGP_IMEI_READ1 0x6000600
+E/        (  632): TRANSACTION_LGP_IMEI_READ2 0x80101
+E/        (  632): TRANSACTION_LGP_IMEI_READ3 0x50609
+E/        (  175): ---> BpLGPService::lgp_imei_read : 0x609050360006008010150609
+E/        (  175): ---> Proxy write : 1
+E/agps    (  197): [agps] ERR: [CP] band_num is not ready  retry=0
+E/agps    (  197): [agps] ERR: [CP] band_num is not ready  retry=1
+E/M4U_L   (  187): ::MTKM4UDrv 10.
+E/agps    (  197): [agps] ERR: [CP] band_num is not ready  retry=2
+E/M4U_L   (  187): ~MTKM4UDrv 10.
+E/CameraService(  187): setUpVendorTags: Vendor tag operations not fully defined. Ignoring definitions.
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 3338:watchdog(): Allocating logical channel 1/12 
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 955:setup_pty_interface(): symlink done
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 978:setup_pty_interface(): New channel properties: number: 1 fd: 7 device: /dev/ptmx
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 3338:watchdog(): Allocating logical channel 2/12 
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 955:setup_pty_interface(): symlink done
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 978:setup_pty_interface(): New channel properties: number: 2 fd: 10 device: /dev/ptmx
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 3338:watchdog(): Allocating logical channel 3/12 
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 955:setup_pty_interface(): symlink done
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 978:setup_pty_interface(): New channel properties: number: 3 fd: 11 device: /dev/ptmx
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 3338:watchdog(): Allocating logical channel 4/12 
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 955:setup_pty_interface(): symlink done
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 978:setup_pty_interface(): New channel properties: number: 4 fd: 12 device: /dev/ptmx
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 2505:extract_frames(): Control channel opened
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 2510:extract_frames(): Logical channel 1 opened
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 2510:extract_frames(): Logical channel 2 opened
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 2510:extract_frames(): Logical channel 3 opened
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 3338:watchdog(): Allocating logical channel 5/12 
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 955:setup_pty_interface(): symlink done
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 978:setup_pty_interface(): New channel properties: number: 5 fd: 13 device: /dev/ptmx
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 3338:watchdog(): Allocating logical channel 6/12 
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 955:setup_pty_interface(): symlink done
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 978:setup_pty_interface(): New channel properties: number: 26 fd: 14 device: /dev/ptmx
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 3338:watchdog(): Allocating logical channel 7/12 
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 955:setup_pty_interface(): symlink done
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 978:setup_pty_interface(): New channel properties: number: 6 fd: 15 device: /dev/ptmx
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 3338:watchdog(): Allocating logical channel 8/12 
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 955:setup_pty_interface(): symlink done
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 978:setup_pty_interface(): New channel properties: number: 7 fd: 16 device: /dev/ptmx
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 2510:extract_frames(): Logical channel 4 opened
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 2510:extract_frames(): Logical channel 5 opened
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 2510:extract_frames(): Logical channel 26 opened
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 2510:extract_frames(): Logical channel 6 opened
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 3338:watchdog(): Allocating logical channel 9/12 
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 955:setup_pty_interface(): symlink done
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 978:setup_pty_interface(): New channel properties: number: 8 fd: 17 device: /dev/ptmx
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 3338:watchdog(): Allocating logical channel 10/12 
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 955:setup_pty_interface(): symlink done
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 978:setup_pty_interface(): New channel properties: number: 9 fd: 18 device: /dev/ptmx
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 3338:watchdog(): Allocating logical channel 11/12 
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 955:setup_pty_interface(): symlink done
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 978:setup_pty_interface(): New channel properties: number: 10 fd: 19 device: /dev/ptmx
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 3338:watchdog(): Allocating logical channel 12/12 
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 955:setup_pty_interface(): symlink done
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 978:setup_pty_interface(): New channel properties: number: 27 fd: 20 device: /dev/ptmx
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 2510:extract_frames(): Logical channel 7 opened
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 2510:extract_frames(): Logical channel 8 opened
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 2510:extract_frames(): Logical channel 9 opened
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 2510:extract_frames(): Logical channel 10 opened
+E/SpeechDriverDummy(  187): SpeechDriverDummy(), modem_index = 1
+E/SpeechDriverDummy(  187): SpeechDriverDummy(), modem_index = 2
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 2510:extract_frames(): Logical channel 27 opened
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 2525:extract_frames(): Finish MUX Channel Setup Procedure
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 3367:watchdog(): ril-daemon stopped!
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 3369:watchdog(): ril-daemon-mtk started!
+E/use-Rlog/RLOG-RILMUXD(  391): [gsm0710muxd] 3373:watchdog(): muxd switch to user radio
+E/        (  655): IMS: Failed to get socket rild-ims
+E/RILC    (  655): RIL_register: RIL version 10
+W/linker  (  187): libclearaudiowrapper.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+W/linker  (  187): libsoundaurawrapper.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+W/linker  (  187): libpreeffectwrapper.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+W/linker  (  187): libposteffectwrapper.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+W/linker  (  187): libbeatsbass.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+W/linker  (  187): libsrsfx.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+W/linker  (  187): libhpx.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+E/RIL     (  655): IA: getAttachApnSupport get error response
+E/AudioMTKHardware(  187): Newmode and Oldmode is the same!!!!
+E/RIL     (  655): Unhandled unsolicited result code: [SIM_ERROR] [SIM_DRV]: L1usim_Reset OK voltage: 4, T: 0, app: 0, speed:2
+E/RIL     (  655): ERROR read fail -1
+E/agps    (  197): [agps] ERR: [CP] band_num is not ready  retry=3
+E/sdcard  (  683): cannot mount fuse filesystem: No such file or directory
+E/RIL     (  655): Unhandled unsolicited result code: +ENFC
+E/RIL     (  655): Unhandled unsolicited result code: [SIM_ERROR] The SIM is not inserted, due to SIM ACCESS ERROR
+E/RIL     (  655): bootupGetIccid[1] fail and write default string
+E/        (  175): ---BpLGPService
+E/        (  632): TRANSACTION_LGP_IMEI_READ
+E/        (  632): TRANSACTION_LGP_IMEI_READ0 0x6090503
+E/        (  632): TRANSACTION_LGP_IMEI_READ1 0x6000600
+E/        (  632): TRANSACTION_LGP_IMEI_READ2 0x80101
+E/        (  632): TRANSACTION_LGP_IMEI_READ3 0x70509
+E/        (  175): ---> BpLGPService::lgp_imei_read : 0x609050360006008010170509
+E/        (  175): ---> Proxy write : 1
+E/        (  175): ---BpLGPService
+E/        (  632): TRANSACTION_LGP_IMEI_READ
+E/        (  632): TRANSACTION_LGP_IMEI_READ0 0x6090503
+E/        (  632): TRANSACTION_LGP_IMEI_READ1 0x6000600
+E/        (  632): TRANSACTION_LGP_IMEI_READ2 0x80101
+E/        (  632): TRANSACTION_LGP_IMEI_READ3 0x50609
+E/        (  175): ---> BpLGPService::lgp_imei_read : 0x609050360006008010150609
+E/        (  175): ---> Proxy write : 1
+E/RIL     (  655): bootupGetBasebandVersion[0]
+E/RIL     (  655): bootupGetProjectAndMdInfo[0]
+E/RIL     (  655): Unhandled unsolicited result code: MOLY.WR8.W1338.MD.WG.TC01.MUSE82Y.SP.V1.P8
+E/RIL     (  655): Retry AT+CGMR without expecting +CGMR prefix
+E/RIL     (  655): bootupGetBasebandVersion[1]
+E/RIL     (  655): bootupGetProjectAndMdInfo[1]
+E/RIL     (  655): Unhandled unsolicited result code: MOLY.WR8.W1338.MD.WG.TC01.MUSE82Y.SP.V1.P8
+E/RIL     (  655): Retry AT+CGMR without expecting +CGMR prefix
+E/RIL     (  655): ERROR read fail -1
+E/agps    (  197): [agps] ERR: [CP] band_num is not ready  retry=4
