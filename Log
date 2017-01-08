@@ -30,3 +30,65 @@ build/core/main.mk:540: *** The following variables have been changed: PRODUCT_C
 #### make failed to build some targets (55 seconds) ####
 
 dubrovin@GE-70-2PL:~/CM12.1$ ^[[2~
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dubrovin@GE-70-2PL:~/CM12.1$ source build/envsetup.sh
+including device/generic/mini-emulator-x86/vendorsetup.sh
+including device/generic/mini-emulator-mips/vendorsetup.sh
+including device/generic/mini-emulator-x86_64/vendorsetup.sh
+including device/generic/mini-emulator-arm64/vendorsetup.sh
+including device/generic/mini-emulator-armv7-a-neon/vendorsetup.sh
+including device/lge/h324/vendorsetup.sh
+including vendor/cm/vendorsetup.sh
+including sdk/bash_completion/adb.bash
+including vendor/cm/bash_completion/git.bash
+including vendor/cm/bash_completion/repo.bash
+dubrovin@GE-70-2PL:~/CM12.1$ lunch
+
+You're building on Linux
+
+Breakfast menu... pick a combo:
+ 1. aosp_arm64-eng 			 4. aosp_mips-eng 			 7. cm_h324-eng 			 10. m_e_arm-userdebug 			 13. mini_emulator_x86_64-userdebug 
+ 2. aosp_arm-eng 			 5. aosp_x86_64-eng 			 8. cm_h324-user 			 11. mini_emulator_arm64-userdebug 	 14. mini_emulator_x86-userdebug 
+ 3. aosp_mips64-eng 			 6. aosp_x86-eng 			 9. cm_h324-userdebug 			 12. mini_emulator_mips-userdebug 
+... and don't forget the bacon!
+
+Which would you like? [aosp_arm-eng] 7
+Trying dependencies-only mode on a non-existing device tree?
+
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=5.1.1
+CM_VERSION=12.1-20170108-UNOFFICIAL-h324
+TARGET_PRODUCT=cm_h324
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=cortex-a7
+TARGET_2ND_ARCH=
+TARGET_2ND_ARCH_VARIANT=
+TARGET_2ND_CPU_VARIANT=
+HOST_ARCH=x86_64
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-4.4.0-57-generic-x86_64-with-Ubuntu-16.04-xenial
+HOST_BUILD_TYPE=release
+BUILD_ID=LMY49J
+OUT_DIR=/home/dubrovin/CM12.1/out
+============================================
+
+dubrovin@GE-70-2PL:~/CM12.1$ mka
