@@ -1,16 +1,38 @@
-W/auditd  (  195): type=2000 audit(0.0:1): initialized
-D/HWMLIB  (    0): nvram read: 0, 0, 0 
-D/HWMLIB  (    0): [RN]    0.0000    0.0000    0.0000 =>     0     0     0
-I/lmkd    (  197): type=1400 audit(0.0:26): avc: denied { write } for name="logdw" dev="tmpfs" ino=2198 scontext=u:r:lmkd:s0 tcontext=u:object_r:device:s0 tclass=sock_file permissive=1
-I/lowmemorykiller(  197): Using in-kernel low memory killer interface
-I/boot_logo_updat(  201): type=1400 audit(0.0:27): avc: denied { read } for name="mmcblk0" dev="tmpfs" ino=169 scontext=u:r:boot_logo_updater:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
-I/boot_logo_updat(  201): type=1400 audit(0.0:28): avc: denied { open } for path="/dev/block/mmcblk0" dev="tmpfs" ino=169 scontext=u:r:boot_logo_updater:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
-I/6620_launcher(  202): type=1400 audit(0.0:29): avc: denied { read write } for name="stpwmt" dev="tmpfs" ino=2189 scontext=u:r:mtk_6620_launcher:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
-I/6620_launcher(  202): type=1400 audit(0.0:30): avc: denied { open } for path="/dev/stpwmt" dev="tmpfs" ino=2189 scontext=u:r:mtk_6620_launcher:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
-I/nvram_daemon(  242): type=1400 audit(0.0:31): avc: denied { getattr } for path="/data/nvram/APCFG/APRDCL/FILE_VER" dev="mmcblk0p11" ino=89425 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+I/lowmemorykiller(  196): Using in-kernel low memory killer interface
+W/auditd  (  194): type=2000 audit(0.0:1): initialized
+I/lmkd    (  196): type=1400 audit(0.0:7): avc: denied { write } for name="logdw" dev="tmpfs" ino=3265 scontext=u:r:lmkd:s0 tcontext=u:object_r:device:s0 tclass=sock_file permissive=1
+I/nvram_daemon(  215): type=1400 audit(0.0:8): avc: denied { read write } for name="mmcblk0" dev="tmpfs" ino=1327 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+I/nvram_daemon(  215): type=1400 audit(0.0:9): avc: denied { open } for path="/dev/block/mmcblk0" dev="tmpfs" ino=1327 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+I/nvram_daemon(  242): type=1400 audit(0.0:10): avc: denied { read } for name="gsensor" dev="tmpfs" ino=1216 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+I/nvram_daemon(  242): type=1400 audit(0.0:11): avc: denied { open } for path="/dev/gsensor" dev="tmpfs" ino=1216 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+I/nvram_daemon(  245): type=1400 audit(0.0:12): avc: denied { write } for name="pro_info" dev="tmpfs" ino=1276 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+I/nvram_daemon(  245): type=1400 audit(0.0:13): avc: denied { ioctl } for path="/dev/pro_info" dev="tmpfs" ino=1276 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+I/nvram_daemon(  243): type=1400 audit(0.0:14): avc: denied { write } for name="logdw" dev="tmpfs" ino=3265 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:device:s0 tclass=sock_file permissive=1
+E/HWMLIB  (  215): gyroscope_open: Couldn't find or open file sensor (Not a typewriter)
+I/nvram_daemon(  240): type=1400 audit(0.0:15): avc: denied { read write } for name="BT_Addr" dev="mmcblk0p11" ino=89421 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+I/nvram_daemon(  240): type=1400 audit(0.0:16): avc: denied { open } for path="/data/nvram/APCFG/APRDEB/BT_Addr" dev="mmcblk0p11" ino=89421 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+I/nvram_daemon(  242): type=1400 audit(0.0:18): avc: denied { getattr } for path="/data/nvram/APCFG/APRDCL/FILE_VER" dev="mmcblk0p11" ino=89425 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+I/nvram_daemon(  239): type=1400 audit(0.0:17): avc: denied { getattr } for path="/data/nvram/APCFG/APRDCL/FILE_VER" dev="mmcblk0p11" ino=89425 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+I/nvram_daemon(  240): type=1400 audit(0.0:19): avc: denied { getattr } for path="/data/nvram/APCFG/APRDCL/FILE_VER" dev="mmcblk0p11" ino=89425 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+I/nvram_daemon(  240): type=1400 audit(0.0:20): avc: denied { read } for name="FILE_VER" dev="mmcblk0p11" ino=89425 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+I/nvram_daemon(  242): type=1400 audit(0.0:21): avc: denied { read } for name="FILE_VER" dev="mmcblk0p11" ino=89425 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+I/nvram_daemon(  239): type=1400 audit(0.0:22): avc: denied { read } for name="FILE_VER" dev="mmcblk0p11" ino=89425 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+I/nvram_daemon(  240): type=1400 audit(0.0:23): avc: denied { open } for path="/data/nvram/APCFG/APRDCL/FILE_VER" dev="mmcblk0p11" ino=89425 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+I/nvram_daemon(  242): type=1400 audit(0.0:24): avc: denied { open } for path="/data/nvram/APCFG/APRDCL/FILE_VER" dev="mmcblk0p11" ino=89425 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+I/nvram_daemon(  240): type=1400 audit(0.0:25): avc: denied { getattr } for path="/data/nvram/APCFG/APRDEB/BT_Addr" dev="mmcblk0p11" ino=89421 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+D/HWMLIB  (  215): [RN]    0.0000    0.0000    0.0000 =>     0     0     0
+D/HWMLIB  (  215): nvram read: 0, 0, 0 
+D/HWMLIB  (  215): threshold won't set
+I/mtk_agpsd(  246): type=1400 audit(0.0:26): avc: denied { read write } for name="ttyC2" dev="tmpfs" ino=1295 scontext=u:r:mtk_agpsd:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+I/mtk_agpsd(  246): type=1400 audit(0.0:27): avc: denied { open } for path="/dev/ttyC2" dev="tmpfs" ino=1295 scontext=u:r:mtk_agpsd:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+I/mtk_agpsd(  246): type=1400 audit(0.0:28): avc: denied { ioctl } for path="/dev/ttyC2" dev="tmpfs" ino=1295 scontext=u:r:mtk_agpsd:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+I/6620_launcher(  201): type=1400 audit(0.0:29): avc: denied { read write } for name="stpwmt" dev="tmpfs" ino=3256 scontext=u:r:mtk_6620_launcher:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+I/6620_launcher(  201): type=1400 audit(0.0:30): avc: denied { open } for path="/dev/stpwmt" dev="tmpfs" ino=3256 scontext=u:r:mtk_6620_launcher:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+I/nvram_daemon(  239): type=1400 audit(0.0:31): avc: denied { getattr } for path="/data/nvram/APCFG/APRDCL/FILE_VER" dev="mmcblk0p11" ino=89425 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
 I/nvram_daemon(  240): type=1400 audit(0.0:32): avc: denied { getattr } for path="/data/nvram/APCFG/APRDCL/FILE_VER" dev="mmcblk0p11" ino=89425 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
-I/nvram_daemon(  242): type=1400 audit(0.0:33): avc: denied { getattr } for path="/data/nvram/APCFG/APRDEB/BT_Addr" dev="mmcblk0p11" ino=89421 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
-I/nvram_daemon(  242): type=1400 audit(0.0:34): avc: denied { read } for name="BT_Addr" dev="mmcblk0p11" ino=89421 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
-I/nvram_daemon(  242): type=1400 audit(0.0:35): avc: denied { open } for path="/data/nvram/APCFG/APRDEB/BT_Addr" dev="mmcblk0p11" ino=89421 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
-I/nvram_daemon(  242): type=1400 audit(0.0:36): avc: denied { write } for name="BT_Addr" dev="mmcblk0p11" ino=89421 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
-D/HWMLIB  (  216): threshold won't set
+I/nvram_daemon(  240): type=1400 audit(0.0:33): avc: denied { getattr } for path="/data/nvram/APCFG/APRDEB/BT_Addr" dev="mmcblk0p11" ino=89421 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+I/nvram_daemon(  240): type=1400 audit(0.0:34): avc: denied { read } for name="BT_Addr" dev="mmcblk0p11" ino=89421 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+I/nvram_daemon(  240): type=1400 audit(0.0:35): avc: denied { open } for path="/data/nvram/APCFG/APRDEB/BT_Addr" dev="mmcblk0p11" ino=89421 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+I/nvram_daemon(  240): type=1400 audit(0.0:36): avc: denied { write } for name="BT_Addr" dev="mmcblk0p11" ino=89421 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+I/boot_logo_updat(  200): type=1400 audit(0.0:37): avc: denied { read } for name="mmcblk0" dev="tmpfs" ino=1327 scontext=u:r:boot_logo_updater:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+I/boot_logo_updat(  200): type=1400 audit(0.0:38): avc: denied { open } for path="/dev/block/mmcblk0" dev="tmpfs" ino=1327 scontext=u:r:boot_logo_updater:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
