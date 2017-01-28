@@ -1,0 +1,1086 @@
+--------- beginning of crash
+E/AndroidRuntime(  518): *** FATAL EXCEPTION IN SYSTEM PROCESS: main
+E/AndroidRuntime(  518): java.lang.NullPointerException: Attempt to invoke virtual method 'void com.android.server.wm.WindowManagerService.showBootMessage(java.lang.CharSequence, boolean)' on a null object reference
+E/AndroidRuntime(  518): 	at com.android.server.am.ActivityManagerService.showBootMessage(ActivityManagerService.java:6300)
+E/AndroidRuntime(  518): 	at com.android.server.SystemServer.startOtherServices(SystemServer.java:617)
+E/AndroidRuntime(  518): 	at com.android.server.SystemServer.run(SystemServer.java:285)
+E/AndroidRuntime(  518): 	at com.android.server.SystemServer.main(SystemServer.java:186)
+E/AndroidRuntime(  518): 	at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime(  518): 	at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime(  518): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+E/AndroidRuntime(  518): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)
+--------- beginning of system
+E/audit_log( 1108): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1108): Failed on audit_log_open
+E/audit_log( 1118): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1118): Failed on audit_log_open
+E/audit_log( 1124): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1124): Failed on audit_log_open
+E/audit_log( 1130): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1130): Failed on audit_log_open
+E/audit_log( 1136): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1136): Failed on audit_log_open
+E/audit_log( 1143): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1143): Failed on audit_log_open
+E/audit_log( 1153): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1153): Failed on audit_log_open
+E/audit_log( 1159): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1159): Failed on audit_log_open
+E/audit_log( 1165): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1165): Failed on audit_log_open
+E/audit_log( 1171): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1171): Failed on audit_log_open
+E/audit_log( 1178): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1178): Failed on audit_log_open
+E/audit_log( 1188): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1188): Failed on audit_log_open
+E/audit_log( 1194): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1194): Failed on audit_log_open
+E/audit_log( 1200): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1200): Failed on audit_log_open
+E/PackageManager( 1040): updateAllSharedLibrariesLPw failed: Package com.android.dialer requires unavailable shared library com.qualcomm.qti.smartsearch; failing!
+E/ActivityThread( 1040): Failed to find provider info for settings
+E/System  ( 1040): ******************************************
+E/System  ( 1040): ************ Failure starting core service
+E/System  ( 1040): java.lang.NullPointerException: Attempt to invoke interface method 'android.os.Bundle android.content.IContentProvider.call(java.lang.String, java.lang.String, java.lang.String, android.os.Bundle)' on a null object reference
+E/System  ( 1040): 	at android.provider.Settings$NameValueCache.getStringForUser(Settings.java:1157)
+E/System  ( 1040): 	at android.provider.Settings$Secure.getStringForUser(Settings.java:4167)
+E/System  ( 1040): 	at android.provider.Settings$Secure.getIntForUser(Settings.java:4237)
+E/System  ( 1040): 	at android.provider.Settings$Secure.getInt(Settings.java:4227)
+E/System  ( 1040): 	at com.android.server.am.CoreSettingsObserver.populateSettings(CoreSettingsObserver.java:124)
+E/System  ( 1040): 	at com.android.server.am.CoreSettingsObserver.sendCoreSettings(CoreSettingsObserver.java:80)
+E/System  ( 1040): 	at com.android.server.am.CoreSettingsObserver.<init>(CoreSettingsObserver.java:65)
+E/System  ( 1040): 	at com.android.server.am.ActivityManagerService.installSystemProviders(ActivityManagerService.java:10030)
+E/System  ( 1040): 	at com.android.server.SystemServer.startOtherServices(SystemServer.java:492)
+E/System  ( 1040): 	at com.android.server.SystemServer.run(SystemServer.java:285)
+E/System  ( 1040): 	at com.android.server.SystemServer.main(SystemServer.java:186)
+E/System  ( 1040): 	at java.lang.reflect.Method.invoke(Native Method)
+E/System  ( 1040): 	at java.lang.reflect.Method.invoke(Method.java:372)
+E/System  ( 1040): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+E/System  ( 1040): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)
+E/ActivityThread( 1040): Failed to find provider info for settings
+F/SystemServer( 1040): BOOT FAILURE starting Input Manager Service
+F/SystemServer( 1040): java.lang.NullPointerException: Attempt to invoke interface method 'android.os.Bundle android.content.IContentProvider.call(java.lang.String, java.lang.String, java.lang.String, android.os.Bundle)' on a null object reference
+F/SystemServer( 1040): 	at android.provider.Settings$NameValueCache.getStringForUser(Settings.java:1157)
+F/SystemServer( 1040): 	at android.provider.Settings$Secure.getStringForUser(Settings.java:4167)
+F/SystemServer( 1040): 	at com.android.internal.inputmethod.InputMethodUtils$InputMethodSettings.getEnabledInputMethodsStr(InputMethodUtils.java:1016)
+F/SystemServer( 1040): 	at com.android.internal.inputmethod.InputMethodUtils$InputMethodSettings.getEnabledInputMethodsAndSubtypeListLocked(InputMethodUtils.java:915)
+F/SystemServer( 1040): 	at com.android.internal.inputmethod.InputMethodUtils$InputMethodSettings.getEnabledInputMethodListLocked(InputMethodUtils.java:849)
+F/SystemServer( 1040): 	at com.android.internal.inputmethod.InputMethodUtils$InputMethodSettings.getExplicitlyOrImplicitlyEnabledInputMethodsAndSubtypeListLocked(InputMethodUtils.java:1286)
+F/SystemServer( 1040): 	at com.android.internal.inputmethod.InputMethodSubtypeSwitchingController$InputMethodAndSubtypeList.getSortedInputMethodAndSubtypeList(InputMethodSubtypeSwitchingController.java:202)
+F/SystemServer( 1040): 	at com.android.internal.inputmethod.InputMethodSubtypeSwitchingController$InputMethodAndSubtypeList.getSortedInputMethodAndSubtypeList(InputMethodSubtypeSwitchingController.java:195)
+F/SystemServer( 1040): 	at com.android.internal.inputmethod.InputMethodSubtypeSwitchingController.resetCircularListLocked(InputMethodSubtypeSwitchingController.java:503)
+F/SystemServer( 1040): 	at com.android.internal.inputmethod.InputMethodSubtypeSwitchingController.<init>(InputMethodSubtypeSwitchingController.java:483)
+F/SystemServer( 1040): 	at com.android.internal.inputmethod.InputMethodSubtypeSwitchingController.createInstanceLocked(InputMethodSubtypeSwitchingController.java:488)
+F/SystemServer( 1040): 	at com.android.server.InputMethodManagerService.<init>(InputMethodManagerService.java:735)
+F/SystemServer( 1040): 	at com.android.server.SystemServer.startOtherServices(SystemServer.java:571)
+F/SystemServer( 1040): 	at com.android.server.SystemServer.run(SystemServer.java:285)
+F/SystemServer( 1040): 	at com.android.server.SystemServer.main(SystemServer.java:186)
+F/SystemServer( 1040): 	at java.lang.reflect.Method.invoke(Native Method)
+F/SystemServer( 1040): 	at java.lang.reflect.Method.invoke(Method.java:372)
+F/SystemServer( 1040): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+F/SystemServer( 1040): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)
+F/SystemServer( 1040): BOOT FAILURE making display ready
+F/SystemServer( 1040): java.lang.NullPointerException: Attempt to invoke virtual method 'void com.android.server.wm.WindowManagerService.displayReady()' on a null object reference
+F/SystemServer( 1040): 	at com.android.server.SystemServer.startOtherServices(SystemServer.java:588)
+F/SystemServer( 1040): 	at com.android.server.SystemServer.run(SystemServer.java:285)
+F/SystemServer( 1040): 	at com.android.server.SystemServer.main(SystemServer.java:186)
+F/SystemServer( 1040): 	at java.lang.reflect.Method.invoke(Native Method)
+F/SystemServer( 1040): 	at java.lang.reflect.Method.invoke(Method.java:372)
+F/SystemServer( 1040): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+F/SystemServer( 1040): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)
+E/ActivityThread( 1040): Failed to find provider info for settings
+F/SystemServer( 1040): BOOT FAILURE performing boot dexopt
+F/SystemServer( 1040): java.lang.NullPointerException: Attempt to invoke interface method 'android.os.Bundle android.content.IContentProvider.call(java.lang.String, java.lang.String, java.lang.String, android.os.Bundle)' on a null object reference
+F/SystemServer( 1040): 	at android.provider.Settings$NameValueCache.getStringForUser(Settings.java:1157)
+F/SystemServer( 1040): 	at android.provider.Settings$Global.getStringForUser(Settings.java:8199)
+F/SystemServer( 1040): 	at android.provider.Settings$Global.getString(Settings.java:8188)
+F/SystemServer( 1040): 	at android.provider.Settings$Global.getLong(Settings.java:8329)
+F/SystemServer( 1040): 	at com.android.server.pm.PackageManagerService.performBootDexOpt(PackageManagerService.java:4879)
+F/SystemServer( 1040): 	at com.android.server.SystemServer.startOtherServices(SystemServer.java:611)
+F/SystemServer( 1040): 	at com.android.server.SystemServer.run(SystemServer.java:285)
+F/SystemServer( 1040): 	at com.android.server.SystemServer.main(SystemServer.java:186)
+F/SystemServer( 1040): 	at java.lang.reflect.Method.invoke(Native Method)
+F/SystemServer( 1040): 	at java.lang.reflect.Method.invoke(Method.java:372)
+F/SystemServer( 1040): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+F/SystemServer( 1040): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)
+E/System  ( 1040): ******************************************
+E/System  ( 1040): ************ Failure starting system services
+E/System  ( 1040): java.lang.NullPointerException: Attempt to invoke virtual method 'void com.android.server.wm.WindowManagerService.showBootMessage(java.lang.CharSequence, boolean)' on a null object reference
+E/System  ( 1040): 	at com.android.server.am.ActivityManagerService.showBootMessage(ActivityManagerService.java:6300)
+E/System  ( 1040): 	at com.android.server.SystemServer.startOtherServices(SystemServer.java:617)
+E/System  ( 1040): 	at com.android.server.SystemServer.run(SystemServer.java:285)
+E/System  ( 1040): 	at com.android.server.SystemServer.main(SystemServer.java:186)
+E/System  ( 1040): 	at java.lang.reflect.Method.invoke(Native Method)
+E/System  ( 1040): 	at java.lang.reflect.Method.invoke(Method.java:372)
+E/System  ( 1040): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+E/System  ( 1040): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)
+E/AndroidRuntime( 1040): *** FATAL EXCEPTION IN SYSTEM PROCESS: main
+E/AndroidRuntime( 1040): java.lang.NullPointerException: Attempt to invoke virtual method 'void com.android.server.wm.WindowManagerService.showBootMessage(java.lang.CharSequence, boolean)' on a null object reference
+E/AndroidRuntime( 1040): 	at com.android.server.am.ActivityManagerService.showBootMessage(ActivityManagerService.java:6300)
+E/AndroidRuntime( 1040): 	at com.android.server.SystemServer.startOtherServices(SystemServer.java:617)
+E/AndroidRuntime( 1040): 	at com.android.server.SystemServer.run(SystemServer.java:285)
+E/AndroidRuntime( 1040): 	at com.android.server.SystemServer.main(SystemServer.java:186)
+E/AndroidRuntime( 1040): 	at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime( 1040): 	at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime( 1040): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+E/AndroidRuntime( 1040): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)
+E/audit_log( 1210): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1210): Failed on audit_log_open
+E/audit_log( 1442): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1442): Failed on audit_log_open
+E/audit_log( 1486): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1486): Failed on audit_log_open
+E/audit_log( 1492): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1492): Failed on audit_log_open
+E/audit_log( 1498): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1498): Failed on audit_log_open
+E/audit_log( 1504): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1504): Failed on audit_log_open
+E/audit_log( 1511): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1511): Failed on audit_log_open
+E/audit_log( 1522): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1522): Failed on audit_log_open
+E/audit_log( 1528): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1528): Failed on audit_log_open
+E/audit_log( 1534): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1534): Failed on audit_log_open
+E/audit_log( 1540): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1540): Failed on audit_log_open
+E/audit_log( 1547): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1547): Failed on audit_log_open
+E/audit_log( 1557): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1557): Failed on audit_log_open
+E/audit_log( 1563): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1563): Failed on audit_log_open
+E/audit_log( 1569): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1569): Failed on audit_log_open
+E/audit_log( 1575): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1575): Failed on audit_log_open
+E/audit_log( 1582): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1582): Failed on audit_log_open
+E/audit_log( 1592): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1592): Failed on audit_log_open
+E/audit_log( 1598): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1598): Failed on audit_log_open
+E/audit_log( 1604): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1604): Failed on audit_log_open
+E/audit_log( 1610): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1610): Failed on audit_log_open
+E/PackageManager( 1453): updateAllSharedLibrariesLPw failed: Package com.android.dialer requires unavailable shared library com.qualcomm.qti.smartsearch; failing!
+E/audit_log( 1627): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1627): Failed on audit_log_open
+E/audit_log( 1706): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1706): Failed on audit_log_open
+E/audit_log( 1724): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1724): Failed on audit_log_open
+E/audit_log( 1733): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1733): Failed on audit_log_open
+E/audit_log( 1739): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1739): Failed on audit_log_open
+E/audit_log( 1746): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1746): Failed on audit_log_open
+E/audit_log( 1766): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1766): Failed on audit_log_open
+E/audit_log( 1772): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1772): Failed on audit_log_open
+E/ConnectivityService( 1453): Error in networkAttributes - ignoring attempt to define type 49
+E/ConnectivityService( 1453): Error in networkAttributes - ignoring attempt to define type 34
+E/ConnectivityService( 1453): Error in networkAttributes - ignoring attempt to define type 35
+E/ConnectivityService( 1453): Error in networkAttributes - ignoring attempt to define type 36
+E/ConnectivityService( 1453): Error in networkAttributes - ignoring attempt to define type 37
+E/ConnectivityService( 1453): Error in networkAttributes - ignoring attempt to define type 38
+E/ConnectivityService( 1453): Error in networkAttributes - ignoring attempt to define type 41
+E/audit_log( 1791): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1791): Failed on audit_log_open
+E/audit_log( 1797): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1797): Failed on audit_log_open
+E/audit_log( 1804): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1804): Failed on audit_log_open
+E/audit_log( 1814): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1814): Failed on audit_log_open
+E/audit_log( 1820): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1820): Failed on audit_log_open
+E/audit_log( 1826): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1826): Failed on audit_log_open
+E/audit_log( 1832): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1832): Failed on audit_log_open
+E/audit_log( 1839): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1839): Failed on audit_log_open
+E/audit_log( 1849): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1849): Failed on audit_log_open
+E/audit_log( 1855): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1855): Failed on audit_log_open
+E/audit_log( 1861): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1861): Failed on audit_log_open
+E/audit_log( 1867): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1867): Failed on audit_log_open
+E/audit_log( 1876): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1876): Failed on audit_log_open
+E/audit_log( 1884): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1884): Failed on audit_log_open
+E/audit_log( 1890): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1890): Failed on audit_log_open
+E/audit_log( 1896): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1896): Failed on audit_log_open
+E/audit_log( 1902): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1902): Failed on audit_log_open
+E/audit_log( 1913): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1913): Failed on audit_log_open
+E/audit_log( 1919): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1919): Failed on audit_log_open
+E/audit_log( 1925): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1925): Failed on audit_log_open
+E/audit_log( 1931): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1931): Failed on audit_log_open
+E/audit_log( 1937): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1937): Failed on audit_log_open
+E/audit_log( 1948): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1948): Failed on audit_log_open
+E/audit_log( 1954): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1954): Failed on audit_log_open
+E/audit_log( 1960): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1960): Failed on audit_log_open
+E/audit_log( 1966): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1966): Failed on audit_log_open
+E/audit_log( 1973): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1973): Failed on audit_log_open
+E/audit_log( 1983): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1983): Failed on audit_log_open
+E/audit_log( 1989): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1989): Failed on audit_log_open
+E/audit_log( 1995): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 1995): Failed on audit_log_open
+E/audit_log( 2001): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2001): Failed on audit_log_open
+E/audit_log( 2008): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2008): Failed on audit_log_open
+E/audit_log( 2018): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2018): Failed on audit_log_open
+E/audit_log( 2024): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2024): Failed on audit_log_open
+E/audit_log( 2031): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2031): Failed on audit_log_open
+E/audit_log( 2037): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2037): Failed on audit_log_open
+E/audit_log( 2044): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2044): Failed on audit_log_open
+E/audit_log( 2054): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2054): Failed on audit_log_open
+E/audit_log( 2060): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2060): Failed on audit_log_open
+E/audit_log( 2066): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2066): Failed on audit_log_open
+E/audit_log( 2072): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2072): Failed on audit_log_open
+E/audit_log( 2079): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2079): Failed on audit_log_open
+E/audit_log( 2089): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2089): Failed on audit_log_open
+E/audit_log( 2096): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2096): Failed on audit_log_open
+E/audit_log( 2102): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2102): Failed on audit_log_open
+E/audit_log( 2108): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2108): Failed on audit_log_open
+E/audit_log( 2115): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2115): Failed on audit_log_open
+E/audit_log( 2125): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2125): Failed on audit_log_open
+E/audit_log( 2131): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2131): Failed on audit_log_open
+E/audit_log( 2137): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2137): Failed on audit_log_open
+E/audit_log( 2143): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2143): Failed on audit_log_open
+E/audit_log( 2150): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2150): Failed on audit_log_open
+E/audit_log( 2160): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2160): Failed on audit_log_open
+E/audit_log( 2166): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2166): Failed on audit_log_open
+E/audit_log( 2172): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2172): Failed on audit_log_open
+E/audit_log( 2178): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2178): Failed on audit_log_open
+E/audit_log( 2185): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2185): Failed on audit_log_open
+E/audit_log( 2195): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2195): Failed on audit_log_open
+E/audit_log( 2201): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2201): Failed on audit_log_open
+E/audit_log( 2207): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2207): Failed on audit_log_open
+E/audit_log( 2213): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2213): Failed on audit_log_open
+E/audit_log( 2220): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2220): Failed on audit_log_open
+E/audit_log( 2230): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2230): Failed on audit_log_open
+E/audit_log( 2236): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2236): Failed on audit_log_open
+E/audit_log( 2242): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2242): Failed on audit_log_open
+E/audit_log( 2248): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2248): Failed on audit_log_open
+E/audit_log( 2255): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2255): Failed on audit_log_open
+E/audit_log( 2265): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2265): Failed on audit_log_open
+E/audit_log( 2271): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2271): Failed on audit_log_open
+E/audit_log( 2277): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2277): Failed on audit_log_open
+E/audit_log( 2283): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2283): Failed on audit_log_open
+E/audit_log( 2290): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2290): Failed on audit_log_open
+E/audit_log( 2300): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2300): Failed on audit_log_open
+E/audit_log( 2306): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2306): Failed on audit_log_open
+E/audit_log( 2312): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2312): Failed on audit_log_open
+E/audit_log( 2318): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2318): Failed on audit_log_open
+E/audit_log( 2328): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2328): Failed on audit_log_open
+E/audit_log( 2338): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2338): Failed on audit_log_open
+E/audit_log( 2344): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2344): Failed on audit_log_open
+E/audit_log( 2350): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2350): Failed on audit_log_open
+E/audit_log( 2359): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2359): Failed on audit_log_open
+E/audit_log( 2366): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2366): Failed on audit_log_open
+E/audit_log( 2376): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2376): Failed on audit_log_open
+E/audit_log( 2382): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2382): Failed on audit_log_open
+E/audit_log( 2388): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2388): Failed on audit_log_open
+E/audit_log( 2398): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2398): Failed on audit_log_open
+E/audit_log( 2405): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2405): Failed on audit_log_open
+E/audit_log( 2418): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2418): Failed on audit_log_open
+E/audit_log( 2424): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2424): Failed on audit_log_open
+E/audit_log( 2430): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2430): Failed on audit_log_open
+E/audit_log( 2436): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2436): Failed on audit_log_open
+E/audit_log( 2443): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2443): Failed on audit_log_open
+E/audit_log( 2453): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2453): Failed on audit_log_open
+E/audit_log( 2459): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2459): Failed on audit_log_open
+E/audit_log( 2465): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2465): Failed on audit_log_open
+E/audit_log( 2471): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2471): Failed on audit_log_open
+E/audit_log( 2478): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2478): Failed on audit_log_open
+E/audit_log( 2488): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2488): Failed on audit_log_open
+E/audit_log( 2497): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2497): Failed on audit_log_open
+E/audit_log( 2503): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2503): Failed on audit_log_open
+E/audit_log( 2509): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2509): Failed on audit_log_open
+E/audit_log( 2520): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2520): Failed on audit_log_open
+E/audit_log( 2528): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2528): Failed on audit_log_open
+E/audit_log( 2534): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2534): Failed on audit_log_open
+E/audit_log( 2540): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2540): Failed on audit_log_open
+E/audit_log( 2546): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2546): Failed on audit_log_open
+E/audit_log( 2557): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2557): Failed on audit_log_open
+E/audit_log( 2563): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2563): Failed on audit_log_open
+E/audit_log( 2569): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2569): Failed on audit_log_open
+E/audit_log( 2575): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2575): Failed on audit_log_open
+E/audit_log( 2582): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2582): Failed on audit_log_open
+E/audit_log( 2592): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2592): Failed on audit_log_open
+E/audit_log( 2598): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2598): Failed on audit_log_open
+E/audit_log( 2604): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2604): Failed on audit_log_open
+E/audit_log( 2610): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2610): Failed on audit_log_open
+E/audit_log( 2617): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2617): Failed on audit_log_open
+E/audit_log( 2627): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2627): Failed on audit_log_open
+E/audit_log( 2633): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2633): Failed on audit_log_open
+E/audit_log( 2639): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2639): Failed on audit_log_open
+E/audit_log( 2645): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2645): Failed on audit_log_open
+E/audit_log( 2652): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2652): Failed on audit_log_open
+E/audit_log( 2662): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2662): Failed on audit_log_open
+E/audit_log( 2669): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2669): Failed on audit_log_open
+E/audit_log( 2675): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2675): Failed on audit_log_open
+E/audit_log( 2681): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2681): Failed on audit_log_open
+E/audit_log( 2688): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2688): Failed on audit_log_open
+E/audit_log( 2698): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2698): Failed on audit_log_open
+E/audit_log( 2704): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2704): Failed on audit_log_open
+E/audit_log( 2710): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2710): Failed on audit_log_open
+E/audit_log( 2716): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2716): Failed on audit_log_open
+E/audit_log( 2723): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2723): Failed on audit_log_open
+E/audit_log( 2733): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2733): Failed on audit_log_open
+E/audit_log( 2739): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2739): Failed on audit_log_open
+E/audit_log( 2745): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2745): Failed on audit_log_open
+E/audit_log( 2753): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2753): Failed on audit_log_open
+E/audit_log( 2762): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2762): Failed on audit_log_open
+E/audit_log( 2772): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2772): Failed on audit_log_open
+E/audit_log( 2778): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2778): Failed on audit_log_open
+E/audit_log( 2784): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2784): Failed on audit_log_open
+E/audit_log( 2790): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2790): Failed on audit_log_open
+E/audit_log( 2797): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2797): Failed on audit_log_open
+E/audit_log( 2807): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2807): Failed on audit_log_open
+E/audit_log( 2813): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2813): Failed on audit_log_open
+E/audit_log( 2819): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2819): Failed on audit_log_open
+E/audit_log( 2825): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2825): Failed on audit_log_open
+E/audit_log( 2832): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2832): Failed on audit_log_open
+E/audit_log( 2842): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2842): Failed on audit_log_open
+E/audit_log( 2848): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2848): Failed on audit_log_open
+E/audit_log( 2854): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2854): Failed on audit_log_open
+E/audit_log( 2860): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2860): Failed on audit_log_open
+E/audit_log( 2867): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2867): Failed on audit_log_open
+E/audit_log( 2877): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2877): Failed on audit_log_open
+E/audit_log( 2883): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2883): Failed on audit_log_open
+E/audit_log( 2889): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2889): Failed on audit_log_open
+E/audit_log( 2895): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2895): Failed on audit_log_open
+E/audit_log( 2902): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2902): Failed on audit_log_open
+E/audit_log( 2912): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2912): Failed on audit_log_open
+E/audit_log( 2918): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2918): Failed on audit_log_open
+E/audit_log( 2924): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2924): Failed on audit_log_open
+E/audit_log( 2930): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2930): Failed on audit_log_open
+E/audit_log( 2937): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2937): Failed on audit_log_open
+E/audit_log( 2947): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2947): Failed on audit_log_open
+E/audit_log( 2953): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2953): Failed on audit_log_open
+E/audit_log( 2959): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2959): Failed on audit_log_open
+E/audit_log( 2965): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2965): Failed on audit_log_open
+E/audit_log( 2974): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2974): Failed on audit_log_open
+E/audit_log( 2982): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2982): Failed on audit_log_open
+E/audit_log( 2988): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2988): Failed on audit_log_open
+E/audit_log( 2994): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 2994): Failed on audit_log_open
+E/audit_log( 3000): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3000): Failed on audit_log_open
+E/audit_log( 3011): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3011): Failed on audit_log_open
+E/audit_log( 3017): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3017): Failed on audit_log_open
+E/audit_log( 3023): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3023): Failed on audit_log_open
+E/audit_log( 3029): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3029): Failed on audit_log_open
+E/audit_log( 3038): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3038): Failed on audit_log_open
+E/audit_log( 3049): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3049): Failed on audit_log_open
+E/audit_log( 3055): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3055): Failed on audit_log_open
+E/audit_log( 3061): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3061): Failed on audit_log_open
+E/audit_log( 3067): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3067): Failed on audit_log_open
+E/audit_log( 3074): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3074): Failed on audit_log_open
+E/audit_log( 3084): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3084): Failed on audit_log_open
+E/audit_log( 3090): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3090): Failed on audit_log_open
+E/audit_log( 3096): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3096): Failed on audit_log_open
+E/audit_log( 3102): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3102): Failed on audit_log_open
+E/audit_log( 3109): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3109): Failed on audit_log_open
+E/audit_log( 3119): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3119): Failed on audit_log_open
+E/audit_log( 3125): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3125): Failed on audit_log_open
+E/audit_log( 3131): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3131): Failed on audit_log_open
+E/audit_log( 3137): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3137): Failed on audit_log_open
+E/audit_log( 3144): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3144): Failed on audit_log_open
+E/audit_log( 3154): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3154): Failed on audit_log_open
+E/audit_log( 3160): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3160): Failed on audit_log_open
+E/audit_log( 3166): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3166): Failed on audit_log_open
+E/audit_log( 3172): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3172): Failed on audit_log_open
+E/audit_log( 3179): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3179): Failed on audit_log_open
+E/audit_log( 3189): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3189): Failed on audit_log_open
+E/audit_log( 3195): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3195): Failed on audit_log_open
+E/audit_log( 3201): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3201): Failed on audit_log_open
+E/audit_log( 3207): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3207): Failed on audit_log_open
+E/audit_log( 3214): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3214): Failed on audit_log_open
+E/audit_log( 3224): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3224): Failed on audit_log_open
+E/audit_log( 3230): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3230): Failed on audit_log_open
+E/audit_log( 3236): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3236): Failed on audit_log_open
+E/audit_log( 3242): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3242): Failed on audit_log_open
+E/audit_log( 3249): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3249): Failed on audit_log_open
+E/audit_log( 3259): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3259): Failed on audit_log_open
+E/audit_log( 3265): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3265): Failed on audit_log_open
+E/audit_log( 3271): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3271): Failed on audit_log_open
+E/audit_log( 3277): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3277): Failed on audit_log_open
+E/audit_log( 3284): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3284): Failed on audit_log_open
+E/audit_log( 3294): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3294): Failed on audit_log_open
+E/audit_log( 3300): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3300): Failed on audit_log_open
+E/audit_log( 3306): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3306): Failed on audit_log_open
+E/audit_log( 3312): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3312): Failed on audit_log_open
+E/audit_log( 3319): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3319): Failed on audit_log_open
+E/audit_log( 3329): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3329): Failed on audit_log_open
+E/audit_log( 3335): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3335): Failed on audit_log_open
+E/audit_log( 3343): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3343): Failed on audit_log_open
+E/audit_log( 3349): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3349): Failed on audit_log_open
+E/audit_log( 3356): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3356): Failed on audit_log_open
+E/audit_log( 3366): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3366): Failed on audit_log_open
+E/audit_log( 3372): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3372): Failed on audit_log_open
+E/audit_log( 3378): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3378): Failed on audit_log_open
+E/audit_log( 3384): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3384): Failed on audit_log_open
+E/audit_log( 3391): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3391): Failed on audit_log_open
+E/audit_log( 3401): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3401): Failed on audit_log_open
+E/audit_log( 3407): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3407): Failed on audit_log_open
+E/audit_log( 3413): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3413): Failed on audit_log_open
+E/audit_log( 3419): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3419): Failed on audit_log_open
+E/audit_log( 3426): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3426): Failed on audit_log_open
+E/audit_log( 3436): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3436): Failed on audit_log_open
+E/audit_log( 3442): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3442): Failed on audit_log_open
+E/audit_log( 3448): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3448): Failed on audit_log_open
+E/audit_log( 3454): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3454): Failed on audit_log_open
+E/audit_log( 3461): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3461): Failed on audit_log_open
+E/audit_log( 3471): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3471): Failed on audit_log_open
+E/audit_log( 3477): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3477): Failed on audit_log_open
+E/audit_log( 3483): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3483): Failed on audit_log_open
+E/audit_log( 3489): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3489): Failed on audit_log_open
+E/audit_log( 3496): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3496): Failed on audit_log_open
+E/audit_log( 3506): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3506): Failed on audit_log_open
+E/audit_log( 3512): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3512): Failed on audit_log_open
+E/audit_log( 3518): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3518): Failed on audit_log_open
+E/audit_log( 3524): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3524): Failed on audit_log_open
+E/audit_log( 3531): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3531): Failed on audit_log_open
+E/audit_log( 3542): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3542): Failed on audit_log_open
+E/audit_log( 3548): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3548): Failed on audit_log_open
+E/audit_log( 3554): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3554): Failed on audit_log_open
+E/audit_log( 3560): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3560): Failed on audit_log_open
+E/audit_log( 3569): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3569): Failed on audit_log_open
+E/audit_log( 3577): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3577): Failed on audit_log_open
+E/audit_log( 3583): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3583): Failed on audit_log_open
+E/audit_log( 3589): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3589): Failed on audit_log_open
+E/audit_log( 3595): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3595): Failed on audit_log_open
+E/audit_log( 3606): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3606): Failed on audit_log_open
+E/audit_log( 3612): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3612): Failed on audit_log_open
+E/audit_log( 3618): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3618): Failed on audit_log_open
+E/audit_log( 3624): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3624): Failed on audit_log_open
+E/audit_log( 3631): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3631): Failed on audit_log_open
+E/audit_log( 3641): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3641): Failed on audit_log_open
+E/audit_log( 3647): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3647): Failed on audit_log_open
+E/audit_log( 3653): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3653): Failed on audit_log_open
+E/audit_log( 3659): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3659): Failed on audit_log_open
+E/audit_log( 3666): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3666): Failed on audit_log_open
+E/audit_log( 3676): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3676): Failed on audit_log_open
+E/audit_log( 3682): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3682): Failed on audit_log_open
+E/audit_log( 3688): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3688): Failed on audit_log_open
+E/audit_log( 3694): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3694): Failed on audit_log_open
+E/audit_log( 3701): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3701): Failed on audit_log_open
+E/audit_log( 3711): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3711): Failed on audit_log_open
+E/audit_log( 3717): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3717): Failed on audit_log_open
+E/audit_log( 3723): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3723): Failed on audit_log_open
+E/audit_log( 3729): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3729): Failed on audit_log_open
+E/audit_log( 3736): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3736): Failed on audit_log_open
+E/audit_log( 3746): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3746): Failed on audit_log_open
+E/audit_log( 3752): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3752): Failed on audit_log_open
+E/audit_log( 3758): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3758): Failed on audit_log_open
+E/audit_log( 3764): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3764): Failed on audit_log_open
+E/audit_log( 3771): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3771): Failed on audit_log_open
+E/audit_log( 3781): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3781): Failed on audit_log_open
+E/audit_log( 3787): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3787): Failed on audit_log_open
+E/audit_log( 3793): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3793): Failed on audit_log_open
+E/audit_log( 3799): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3799): Failed on audit_log_open
+E/audit_log( 3806): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3806): Failed on audit_log_open
+E/audit_log( 3816): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3816): Failed on audit_log_open
+E/audit_log( 3822): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3822): Failed on audit_log_open
+E/audit_log( 3828): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3828): Failed on audit_log_open
+E/audit_log( 3834): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3834): Failed on audit_log_open
+E/audit_log( 3841): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3841): Failed on audit_log_open
+E/audit_log( 3851): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3851): Failed on audit_log_open
+E/audit_log( 3857): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3857): Failed on audit_log_open
+E/audit_log( 3863): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3863): Failed on audit_log_open
+E/audit_log( 3869): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3869): Failed on audit_log_open
+E/audit_log( 3876): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3876): Failed on audit_log_open
+E/audit_log( 3886): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3886): Failed on audit_log_open
+E/audit_log( 3892): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3892): Failed on audit_log_open
+E/audit_log( 3898): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3898): Failed on audit_log_open
+E/audit_log( 3908): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3908): Failed on audit_log_open
+E/audit_log( 3915): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3915): Failed on audit_log_open
+E/audit_log( 3925): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3925): Failed on audit_log_open
+E/audit_log( 3931): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3931): Failed on audit_log_open
+E/audit_log( 3937): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3937): Failed on audit_log_open
+E/audit_log( 3943): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3943): Failed on audit_log_open
+E/audit_log( 3950): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3950): Failed on audit_log_open
+E/audit_log( 3960): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3960): Failed on audit_log_open
+E/audit_log( 3966): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3966): Failed on audit_log_open
+E/audit_log( 3972): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3972): Failed on audit_log_open
+E/audit_log( 3978): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3978): Failed on audit_log_open
+E/audit_log( 3985): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3985): Failed on audit_log_open
+E/audit_log( 3995): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 3995): Failed on audit_log_open
+E/audit_log( 4001): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4001): Failed on audit_log_open
+E/audit_log( 4007): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4007): Failed on audit_log_open
+E/audit_log( 4013): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4013): Failed on audit_log_open
+E/audit_log( 4020): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4020): Failed on audit_log_open
+E/audit_log( 4030): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4030): Failed on audit_log_open
+E/audit_log( 4036): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4036): Failed on audit_log_open
+E/audit_log( 4042): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4042): Failed on audit_log_open
+E/audit_log( 4048): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4048): Failed on audit_log_open
+E/audit_log( 4055): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4055): Failed on audit_log_open
+E/audit_log( 4065): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4065): Failed on audit_log_open
+E/audit_log( 4071): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4071): Failed on audit_log_open
+E/audit_log( 4077): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4077): Failed on audit_log_open
+E/audit_log( 4083): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4083): Failed on audit_log_open
+E/audit_log( 4090): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4090): Failed on audit_log_open
+E/audit_log( 4100): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4100): Failed on audit_log_open
+E/audit_log( 4106): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4106): Failed on audit_log_open
+E/audit_log( 4112): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4112): Failed on audit_log_open
+E/audit_log( 4118): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4118): Failed on audit_log_open
+E/audit_log( 4125): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4125): Failed on audit_log_open
+E/audit_log( 4135): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4135): Failed on audit_log_open
+E/audit_log( 4144): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4144): Failed on audit_log_open
+E/audit_log( 4150): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4150): Failed on audit_log_open
+E/audit_log( 4156): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4156): Failed on audit_log_open
+E/audit_log( 4165): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4165): Failed on audit_log_open
+E/audit_log( 4173): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4173): Failed on audit_log_open
+E/audit_log( 4179): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4179): Failed on audit_log_open
+E/audit_log( 4185): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4185): Failed on audit_log_open
+E/audit_log( 4193): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4193): Failed on audit_log_open
+--------- beginning of main
+E/ccci_fsd(1)( 4201): Open: [error]fail open Z:/NVRAM/NVD_DATA/MP0B_001: 2 
+E/audit_log( 4205): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4205): Failed on audit_log_open
+E/sdcard  ( 4210): cannot mount fuse filesystem: No such file or directory
+E/ccci_rpcd( 4202): Load lib fail
+E/ccci_rpcd( 4202): Load lib fail
+E/audit_log( 4211): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4211): Failed on audit_log_open
+E/ccci_rpcd( 4202): Load lib fail
+E/sdcard  ( 4216): cannot mount fuse filesystem: No such file or directory
+E/ccci_rpcd( 4202): Load lib fail
+E/ccci_rpcd( 4202): Load lib fail
+E/audit_log( 4217): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4217): Failed on audit_log_open
+E/sdcard  ( 4222): cannot mount fuse filesystem: No such file or directory
+E/ccci_rpcd( 4202): Load lib fail
+E/ccci_rpcd( 4202): Load lib fail
+E/audit_log( 4223): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4223): Failed on audit_log_open
+E/ccci_rpcd( 4202): Load lib fail
+E/sdcard  ( 4228): cannot mount fuse filesystem: No such file or directory
+E/ccci_rpcd( 4202): Load lib fail
+E/ccci_rpcd( 4202): Load lib fail
+E/audit_log( 4229): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4229): Failed on audit_log_open
+E/sdcard  ( 4235): cannot mount fuse filesystem: No such file or directory
+E/ccci_rpcd( 4202): Load lib fail
+E/ccci_rpcd( 4202): Load lib fail
+E/ccci_fsd(0)( 4236): md_fsd Ver:v2.02, CCCI Ver:2
+E/ccci_fsd(1)( 4236): can't catch SIGKILL
+E/ccci_rpcd( 4237): [Warning]Parameter number not correct,use old version!
+E/ccci_rpcd( 4237): Load lib fail
+E/ccci_fsd(1)( 4236): IsReadOnly: [error]fail on file: /data/nvram/md/FAT3149C88D.log 
+E/ccci_fsd(1)( 4236): Open: [error]fail open Z:/NVRAM/NVD_DATA/MP0B_001: 2 
+E/audit_log( 4240): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4240): Failed on audit_log_open
+E/ccci_rpcd( 4237): Load lib fail
+E/sdcard  ( 4245): cannot mount fuse filesystem: No such file or directory
+E/ccci_rpcd( 4237): Load lib fail
+E/ccci_rpcd( 4237): Load lib fail
+E/audit_log( 4246): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4246): Failed on audit_log_open
+E/sdcard  ( 4251): cannot mount fuse filesystem: No such file or directory
+E/ccci_rpcd( 4237): Load lib fail
+E/ccci_rpcd( 4237): Load lib fail
+E/audit_log( 4252): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4252): Failed on audit_log_open
+E/ccci_rpcd( 4237): Load lib fail
+E/sdcard  ( 4257): cannot mount fuse filesystem: No such file or directory
+E/ccci_rpcd( 4237): Load lib fail
+E/ccci_rpcd( 4237): Load lib fail
+E/audit_log( 4258): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4258): Failed on audit_log_open
+E/sdcard  ( 4263): cannot mount fuse filesystem: No such file or directory
+E/ccci_rpcd( 4237): Load lib fail
+E/ccci_rpcd( 4237): Load lib fail
+E/audit_log( 4265): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4265): Failed on audit_log_open
+E/ccci_rpcd( 4237): Load lib fail
+E/sdcard  ( 4270): cannot mount fuse filesystem: No such file or directory
+E/ccci_rpcd( 4237): Load lib fail
+E/ccci_fsd(0)( 4271): md_fsd Ver:v2.02, CCCI Ver:2
+E/ccci_fsd(1)( 4271): can't catch SIGKILL
+E/ccci_rpcd( 4272): [Warning]Parameter number not correct,use old version!
+E/ccci_rpcd( 4272): Load lib fail
+E/ccci_fsd(1)( 4271): IsReadOnly: [error]fail on file: /data/nvram/md/FAT3149C88D.log 
+E/ccci_fsd(1)( 4271): Open: [error]fail open Z:/NVRAM/NVD_DATA/MP0B_001: 2 
+E/audit_log( 4275): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4275): Failed on audit_log_open
+E/ccci_rpcd( 4272): Load lib fail
+E/sdcard  ( 4280): cannot mount fuse filesystem: No such file or directory
+E/ccci_rpcd( 4272): Load lib fail
+E/ccci_rpcd( 4272): Load lib fail
+E/audit_log( 4281): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4281): Failed on audit_log_open
+E/sdcard  ( 4286): cannot mount fuse filesystem: No such file or directory
+E/ccci_rpcd( 4272): Load lib fail
+E/ccci_rpcd( 4272): Load lib fail
+E/audit_log( 4291): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4291): Failed on audit_log_open
+E/ccci_rpcd( 4272): Load lib fail
+E/sdcard  ( 4296): cannot mount fuse filesystem: No such file or directory
+E/ccci_rpcd( 4272): Load lib fail
+E/ccci_rpcd( 4272): Load lib fail
+E/audit_log( 4297): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4297): Failed on audit_log_open
+E/sdcard  ( 4302): cannot mount fuse filesystem: No such file or directory
+E/ccci_rpcd( 4272): Load lib fail
+E/ccci_rpcd( 4272): Load lib fail
+E/audit_log( 4304): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4304): Failed on audit_log_open
+E/ccci_rpcd( 4272): Load lib fail
+E/sdcard  ( 4309): cannot mount fuse filesystem: No such file or directory
+E/ccci_rpcd( 4272): Load lib fail
+E/ccci_fsd(0)( 4311): md_fsd Ver:v2.02, CCCI Ver:2
+E/ccci_fsd(1)( 4311): can't catch SIGKILL
+E/ccci_rpcd( 4312): [Warning]Parameter number not correct,use old version!
+E/ccci_rpcd( 4312): Load lib fail
+E/ccci_fsd(1)( 4311): IsReadOnly: [error]fail on file: /data/nvram/md/FAT3149C88D.log 
+E/ccci_fsd(1)( 4311): Open: [error]fail open Z:/NVRAM/NVD_DATA/MP0B_001: 2 
+E/audit_log( 4315): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4315): Failed on audit_log_open
+E/ccci_rpcd( 4312): Load lib fail
+E/sdcard  ( 4323): cannot mount fuse filesystem: No such file or directory
+E/ccci_rpcd( 4312): Load lib fail
+E/ccci_rpcd( 4312): Load lib fail
+E/audit_log( 4324): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4324): Failed on audit_log_open
+E/sdcard  ( 4329): cannot mount fuse filesystem: No such file or directory
+E/ccci_rpcd( 4312): Load lib fail
+E/ccci_rpcd( 4312): Load lib fail
+E/audit_log( 4330): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4330): Failed on audit_log_open
+E/ccci_rpcd( 4312): Load lib fail
+E/sdcard  ( 4335): cannot mount fuse filesystem: No such file or directory
+E/ccci_rpcd( 4312): Load lib fail
+E/ccci_rpcd( 4312): Load lib fail
+E/audit_log( 4336): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4336): Failed on audit_log_open
+E/sdcard  ( 4341): cannot mount fuse filesystem: No such file or directory
+E/ccci_rpcd( 4312): Load lib fail
+E/ccci_rpcd( 4312): Load lib fail
+E/audit_log( 4343): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4343): Failed on audit_log_open
+E/ccci_rpcd( 4312): Load lib fail
+E/sdcard  ( 4348): cannot mount fuse filesystem: No such file or directory
+E/ccci_rpcd( 4312): Load lib fail
+E/ccci_fsd(0)( 4349): md_fsd Ver:v2.02, CCCI Ver:2
+E/ccci_fsd(1)( 4349): can't catch SIGKILL
+E/ccci_rpcd( 4350): [Warning]Parameter number not correct,use old version!
+E/ccci_rpcd( 4350): Load lib fail
+E/ccci_fsd(1)( 4349): IsReadOnly: [error]fail on file: /data/nvram/md/FAT3149C88D.log 
+E/ccci_fsd(1)( 4349): Open: [error]fail open Z:/NVRAM/NVD_DATA/MP0B_001: 2 
+E/ccci_rpcd( 4350): Load lib fail
+E/audit_log( 4353): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4353): Failed on audit_log_open
+E/sdcard  ( 4358): cannot mount fuse filesystem: No such file or directory
+E/ccci_rpcd( 4350): Load lib fail
+E/ccci_rpcd( 4350): Load lib fail
+E/audit_log( 4359): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4359): Failed on audit_log_open
+E/ccci_rpcd( 4350): Load lib fail
+E/sdcard  ( 4364): cannot mount fuse filesystem: No such file or directory
+E/ccci_rpcd( 4350): Load lib fail
+E/ccci_rpcd( 4350): Load lib fail
+E/audit_log( 4368): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4368): Failed on audit_log_open
+E/sdcard  ( 4373): cannot mount fuse filesystem: No such file or directory
+E/ccci_rpcd( 4350): Load lib fail
+E/ccci_rpcd( 4350): Load lib fail
+E/audit_log( 4374): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4374): Failed on audit_log_open
+E/sdcard  ( 4379): cannot mount fuse filesystem: No such file or directory
+E/ccci_rpcd( 4350): Load lib fail
+E/ccci_rpcd( 4350): Load lib fail
+E/ccci_rpcd( 4350): Load lib fail
+E/audit_log( 4381): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4381): Failed on audit_log_open
+E/sdcard  ( 4386): cannot mount fuse filesystem: No such file or directory
+E/ccci_rpcd( 4350): Load lib fail
+E/ccci_fsd(0)( 4387): md_fsd Ver:v2.02, CCCI Ver:2
+E/ccci_fsd(1)( 4387): can't catch SIGKILL
+E/ccci_rpcd( 4388): [Warning]Parameter number not correct,use old version!
+E/ccci_rpcd( 4388): Load lib fail
+E/ccci_fsd(1)( 4387): IsReadOnly: [error]fail on file: /data/nvram/md/FAT3149C88D.log 
+E/ccci_fsd(1)( 4387): Open: [error]fail open Z:/NVRAM/NVD_DATA/MP0B_001: 2 
+E/ccci_rpcd( 4388): Load lib fail
+E/audit_log( 4391): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4391): Failed on audit_log_open
+E/sdcard  ( 4396): cannot mount fuse filesystem: No such file or directory
+E/ccci_rpcd( 4388): Load lib fail
+E/ccci_rpcd( 4388): Load lib fail
+E/audit_log( 4397): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4397): Failed on audit_log_open
+E/ccci_rpcd( 4388): Load lib fail
+E/sdcard  ( 4402): cannot mount fuse filesystem: No such file or directory
+E/ccci_rpcd( 4388): Load lib fail
+E/ccci_rpcd( 4388): Load lib fail
+E/audit_log( 4403): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4403): Failed on audit_log_open
+E/sdcard  ( 4408): cannot mount fuse filesystem: No such file or directory
+E/ccci_rpcd( 4388): Load lib fail
+E/ccci_rpcd( 4388): Load lib fail
+E/audit_log( 4409): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4409): Failed on audit_log_open
+E/ccci_rpcd( 4388): Load lib fail
+E/sdcard  ( 4414): cannot mount fuse filesystem: No such file or directory
+E/ccci_rpcd( 4388): Load lib fail
+E/ccci_rpcd( 4388): Load lib fail
+E/audit_log( 4416): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4416): Failed on audit_log_open
+E/sdcard  ( 4421): cannot mount fuse filesystem: No such file or directory
+E/ccci_rpcd( 4388): Load lib fail
+E/ccci_fsd(0)( 4422): md_fsd Ver:v2.02, CCCI Ver:2
+E/ccci_fsd(1)( 4422): can't catch SIGKILL
+E/ccci_rpcd( 4423): [Warning]Parameter number not correct,use old version!
+E/ccci_rpcd( 4423): Load lib fail
+E/ccci_fsd(1)( 4422): IsReadOnly: [error]fail on file: /data/nvram/md/FAT3149C88D.log 
+E/ccci_fsd(1)( 4422): Open: [error]fail open Z:/NVRAM/NVD_DATA/MP0B_001: 2 
+E/ccci_rpcd( 4423): Load lib fail
+E/audit_log( 4426): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4426): Failed on audit_log_open
+E/sdcard  ( 4431): cannot mount fuse filesystem: No such file or directory
+E/ccci_rpcd( 4423): Load lib fail
+E/ccci_rpcd( 4423): Load lib fail
+E/audit_log( 4432): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4432): Failed on audit_log_open
+E/ccci_rpcd( 4423): Load lib fail
+E/sdcard  ( 4437): cannot mount fuse filesystem: No such file or directory
+E/ccci_rpcd( 4423): Load lib fail
+E/ccci_rpcd( 4423): Load lib fail
+E/audit_log( 4438): Could not stat audit logfile /data/misc/audit/audit.log: Permission denied
+E/auditd  ( 4438): Failed on audit_log_open
+E/sdcard  ( 4443): cannot mount fuse filesystem: No such file or directory
+E/ccci_rpcd( 4423): Load lib fail
+E/ccci_rpcd( 4423): Load lib fail
